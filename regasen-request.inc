@@ -56,5 +56,6 @@
 	public ResponseCallback(playerid, response_code, data[])
 	{
 		printf("%d %s", playerid, data);
-		re
+		return true;
+	}
 **/
