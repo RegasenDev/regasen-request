@@ -42,7 +42,7 @@
 	Example:
 	public OnGameModeInit()
 	{
-		regasen_http_send(
+		regasen_request_send(
 			1,
 			HTTP_POST,
 			"https://api.vk.com/method/users.get",
