@@ -54,7 +54,7 @@ char* get_string(AMX* amx, cell param)
 	return NULL;
 }
 
-cell AMX_NATIVE_CALL regasen_http_send(AMX* amx, cell* params)
+cell AMX_NATIVE_CALL regasen_request_send(AMX* amx, cell* params)
 {
 	char* url = get_string(amx, params[3]);
 	char* data = get_string(amx, params[4]);
@@ -129,7 +129,7 @@ PLUGIN_EXPORT void PLUGIN_CALL Unload()
 
 AMX_NATIVE_INFO PluginNatives[] =
 {
-	{ "regasen_http_send", regasen_http_send },
+	{ "regasen_request_send", regasen_request_send },
 	{ 0, 0 }
 };
 
