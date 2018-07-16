@@ -118,13 +118,13 @@ PLUGIN_EXPORT bool PLUGIN_CALL Load(void **ppData)
 	pAMXFunctions = ppData[PLUGIN_DATA_AMX_EXPORTS];
 	logprintf = (logprintf_t)ppData[PLUGIN_DATA_LOGPRINTF];
 
-	logprintf(" * Regasen HTTP loaded.");
+	logprintf(" * Regasen Request loaded.");
 	return true;
 }
 
 PLUGIN_EXPORT void PLUGIN_CALL Unload()
 {
-	logprintf(" * Regasen HTTP unloaded.");
+	logprintf(" * Regasen Request unloaded.");
 }
 
 AMX_NATIVE_INFO PluginNatives[] =
